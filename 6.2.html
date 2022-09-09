@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 6.2</title>
+  <script src="6.2.js" defer></script>
+  <style>
+    .good {
+      border: 1px solid darkgray;
+      background: rgb(236, 250, 253);
+      padding: 10px;
+      margin-bottom: 7px;
+    }
+
+    .cart-btn {
+      margin-top: 7px;
+      padding: 12px 20px;
+      background: rgb(99, 221, 249);
+      border: 1px solid rgba(99, 221, 249, 0.7);
+      border-radius: 5px;
+    }
+
+    .cart-btn:hover {
+      background: rgb(128, 128, 244, 0.7);
+      border: 1px solid rgba(128, 128, 244, 0.7);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 2. Сделать генерацию корзины динамической: верстка корзины не должна находиться в HTML-структуре. 
+          Там должен быть только div, в который будет вставляться корзина, сгенерированная на базе JS:
+       2.1. Пустая корзина должна выводить строку «Корзина пуста»;
+       2.2. Наполненная должна выводить «В корзине: n товаров на сумму m рублей». 
+       
+       3*. Сделать так, чтобы товары в каталоге выводились при помощи JS:
+       3.1. Создать массив товаров (сущность Product);
+       3.2. При загрузке страницы на базе данного массива генерировать вывод из него. 
+       HTML-код должен содержать только div id=”catalog” без вложенного кода. Весь вид каталога генерируется JS.-->
+
+  <div class="catalog"></div>
+
+  <div class="cart-item"></div>
+  <button class="cart-btn">Удалить товары</button>
+
+</body>
+
+</html>

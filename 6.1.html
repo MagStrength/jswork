@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.1 Homework</title>
+
+    <style>
+        /* Шахматная доска похожа на таблицу, поэтому проще сделать её таблицей: */
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        tr {
+            width: 50px;
+            height: 50px;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            background-color: rgb(251, 253, 255);
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Создать функцию, генерирующую шахматную доску. 
+    При этом можно использовать любые html-теги по своему желанию. 
+    Доска должна быть разлинована соответствующим образом, 
+    т.е. чередовать черные и белые ячейки. 
+    Строки должны нумероваться числами от 1 до 8, столбцы – 
+    латинскими буквами A, B, C, D, E, F, G, H. 
+    (использовать createElement / appendChild) -->
+
+    <table id="chess"></table>
+    <script src="js6.1.js"></script>
+</body>
+
+</html>
