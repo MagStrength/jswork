@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 7</title>
+
+</head>
+
+<body>
+
+  <!-- На странице корзины:
+  a. Сделать отдельные блоки «Состав корзины», «Адрес доставки», «Комментарий»;
+  b. Сделать эти поля сворачиваемыми;
+  c. Заполнять поля по очереди, то есть давать посмотреть состав корзины, внизу которого
+     есть кнопка «Далее». Если нажать ее, сворачивается «Состав корзины» и открывается
+     «Адрес доставки» и так далее. -->
+
+
+
+  <h1>Каталог товаров:</h1>
+  <div class="catalog"></div>
+  <hr>
+
+
+  <div class="dropdown">
+    <h1>Корзина:</h1>
+    <h3>Состав Корзины:</h3>
+    <div class="cart"></div>
+    <button class="cart-btn">Очистить корзину</button> <br>
+  </div>
+
+
+  <div class="dropdown">
+    <h2>Доставка:</h2>
+    <div id="myDropdown" class="dropdown-content">
+      <h3>Доставка по адресу:</h3>
+    </div>
+    <button onclick="myFunction()" class="dropbtn">Далее</button>
+  </div>
+
+  <div class="dropdown">
+    <h2>Комментарий:</h2>
+    <div id="myDropdown" class="dropdown-content">
+      <form action="#">
+        <p><b>Введите комментарий к заказу:</b></p>
+        <p><textarea rows="10" cols="45" name="text"></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+      </form>
+    </div>
+    <button onclick="myFunction()" class="dropbtn">Далее</button>
+  </div>
+
+
+  <Style>
+    .cart {
+      background-color: rgb(255, 232, 207);
+    }
+
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+      background-color: #2980B9;
+    }
+
+    .dropdown-content {
+      display: none;
+      height: 400px;
+      background-color: #a9a9a9;
+    }
+
+    .show {
+      display: block;
+    }
+  </Style>
+
+  <script src="7.js"></script>
+  <script src="cart.js"></script>
+
+
+</body>
+
+</html>
