@@ -2,3 +2,5 @@
 2. Работа с переменными. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»).
 3. *Чему будет равно JS-выражение 1000 + "108"
 4. *Самостоятельно разобраться с атрибутами тега script (async и defer)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username)](https://github.com/anuraghazra/github-readme-stats)
